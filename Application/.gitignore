@@ -16,4 +16,3 @@
 keystore/
 signing.gradle
 secret.properties
-buildsystem/secrets.gradle
