@@ -107,7 +107,7 @@ fun isAttestationStatementValid(attestationStatement: AttestationStatement): Boo
     if (attestationStatement.apkCertificateDigestSha256.isNotEmpty()) {
         val cer =
             Hex.decodeHex(appInfo.getProperty("certFingerprint").toCharArray())
-        if (!attestationStatement.apkCertificateDigestSha256.first().contentEquals(cer)) {
+        if (!attestationStatement.apkCertificateDigestSha256.first()!!.contentEquals(cer)) {
             isValid = false
             System.err.println("Certificates fingerprint are different")
         }
