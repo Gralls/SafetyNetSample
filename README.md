@@ -4,7 +4,7 @@ Simple use case of Google's SafetyNet Attestation API
 ## Android App configuration
 
 ### Secrets
-In order to run the app file `secret.properties` needs to be created inside `Application/` directory. This file should contains
+In order to run the app, file `secret.properties` needs to be created inside `Application/` directory. This file should contains
 two variable:
 - SafetynetApiKey=yourApiKey
 - ApiBaseUrl=http://api.url:8080/
